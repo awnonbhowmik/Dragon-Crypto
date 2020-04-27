@@ -52,49 +52,7 @@ def koblitz_decoder(encoded_points):
 # plt.show()
 
 
-def pyth(x, y):
-    return x**2+y**2
-
-
-decoded_points = []
-
-
-def primitive_start_point(N):
-    for i in range(-math.ceil(math.sqrt(N)), math.ceil(math.sqrt(N))):
-        for j in range(-math.ceil(math.sqrt(N)), math.ceil(math.sqrt(N))):
-            if i**2+j**2 == N:
-                decoded_points.append([j, i])
-
-    return decoded_points
-
-
-"""
-def dec_ternary(n):
-    if n == 0:
-        return '0'
-    nums = []
-    while n:
-        n, r = divmod(n, 3)
-        nums.append(str(r))
-    return nums[::-1]
-
-print(dec_ternary(11))
-
-def ternary_dec(t):
-    n = 0
-    t = t[::-1]
-    for i in range(len(t)):
-        n += (3**i)*t[i]
-    return n
-
-print(ternary_dec([1,0,2]))
-
-for i in range(len(encoded_points)):
-    x = x_coords[i]
-    y = y_coords[i]
-    print(dec_ternary(pyth(x,y)))
-"""
-
+'''
 if __name__ == "__main__":
     plainText = input("Enter Message: ")
 
@@ -110,3 +68,4 @@ if __name__ == "__main__":
     #decrypt = koblitz_decoder([(1856,292)])
 
     print("Decrypted message: ", decrypt)
+'''
