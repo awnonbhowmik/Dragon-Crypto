@@ -1,12 +1,13 @@
 import turtle
 from koblitz import *
 # initializing the turtle settings
-ob = turtle.Turtle()
-ob.speed(10000)
-ob.hideturtle()
-wn = turtle.Screen()
-wn.bgcolor("black")
-ob.pencolor("teal")
+
+# ob = turtle.Turtle()
+# ob.speed(10000)
+# ob.hideturtle()
+# wn = turtle.Screen()
+# wn.bgcolor("black")
+# ob.pencolor("teal")
 
 
 def turn_sequence_generator(private_key):
@@ -46,7 +47,7 @@ def dragon_render(starting_point, private_key):
     y_start = starting_point[1]
     angle = private_key[2]
 
-    print('Starting Point : (' + str(x_start) + ', ' + str(y_start) + ')')
+    #print('Starting Point : (' + str(x_start) + ', ' + str(y_start) + ')')
 
     ob.penup()
     ob.goto(x_start, y_start)
@@ -68,7 +69,8 @@ def dragon_render(starting_point, private_key):
     x_end = round(ob.xcor())
     y_end = round(ob.ycor())
 
-    print('Ending Point : (' + str(x_end) + ', ' + str(y_end) + ')')
+    #print('Ending Point : (' + str(x_end) + ', ' + str(y_end) + ')')
+    return (x_end,y_end)
 
 
 def reverse_dragon_render(starting_point, private_key):
@@ -79,7 +81,7 @@ def reverse_dragon_render(starting_point, private_key):
 
     angle = private_key[2]
 
-    print('Reverse Starting Point : (' + str(x_start) + ', ' + str(y_start) + ')')
+    #print('Reverse Starting Point : (' + str(x_start) + ', ' + str(y_start) + ')')
 
     ob.penup()
     ob.goto(x_start, y_start)
@@ -100,13 +102,36 @@ def reverse_dragon_render(starting_point, private_key):
     x_end = round(ob.xcor())
     y_end = round(ob.ycor())
 
-    print('Reverse Ending Point : (' + str(x_end) + ', ' + str(y_end) + ')')
+    #print('Reverse Ending Point : (' + str(x_end) + ', ' + str(y_end) + ')')
+    return (x_end,y_end)
+
+def point_to_character(points):
+    output_x = 'X'
+    output_y = 'Y'
+    for x,y in points:
+        output_x += str(x) + 'X'
+        output_y += str(y) + 'Y'
+
+    return output_x+output_y
+
+def character_to_point(output):
+    output_x,output_y = output.split('XY')
+    x_end = output_x.split('X')
+    x_end = x_end[1:]
+    x_end = [int(x) for x in x_end]
+    y_end = output_y.split('Y')
+    y_end = y_end[:-1]
+    y_end = [int(y) for y in y_end]
+    points = []
+    for i in range(len(x_end)):
+        points.append((x_end[i],y_end[i]))  
+    return points
 
 
-private_key = (10, 10, 45)
+# private_key = (10, 5, 30)
 
 # dragon_render((2082, 66), private_key)
 
-reverse_dragon_render((1856, 292), private_key)
+# #reverse_dragon_render((1856, 292), private_key)
 
-turtle.done()
+# turtle.done()
