@@ -1,5 +1,4 @@
 import turtle
-from time import time
 
 ob=turtle.Turtle()
 wn=turtle.Screen()
