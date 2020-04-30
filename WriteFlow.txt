@@ -1,0 +1,25 @@
+1. Intro
+2. Dragon Fractal
+	2.1 Generating process
+3. Trapdoor Function
+
+4. Proposed Algorithm
+	Suppose the sample test string is "Show me the $$$"
+	4.1-> Koblitz Encoder
+		Output: char_to_point_encoding()
+	4.2-> Dragon Encrypt
+		Input: initial_start_points
+		Output: fractal_end_points, based on private key parameters
+	4.3-> Padding
+		Output: X p1x X p2x X .... pnx XY(split position) p1y Y p2y Y .... pny Y (last Y signifies end of encryption)
+		Encryption ends here
+	4.4-> Remove padding, regenerate points
+		Ouput: [(p1x,p1y),(p2x,p2y),...,(pnx,pny)]
+	4.5-> Dragon Decrypt
+		Input: former list of points, private key parameters
+		Ouput: initial_start_points
+	4.6-> Koblitz Decoder
+		Input: initial_start_points (from 4.5)
+		Output: ASCII values of each char in original string -> convert to string to retrieve original message
+
+NOTE: We have shown that our proposed algorithm is working based on the appropriate parameters. So far no edge cases have been found, but we suspect the presence of one or more. This is dependent on the calculation precision of the machine. The entire process 
