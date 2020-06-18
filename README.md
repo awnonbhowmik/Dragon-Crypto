@@ -42,4 +42,22 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 ## Citation
 If you find this code useful in your research, please consider citing:
 
-Awnon Bhowmik and Unnikrishnan Menon. Dragon Crypto – An Innovative Cryptosystem. International Journal of Computer Applications 176(29):37-41, June 2020.
+```
+@article{10.5120/ijca2020920331,
+	author = {Awnon Bhowmik and Unnikrishnan Menon},
+	title = {Dragon Crypto – An Innovative Cryptosystem},
+	journal = {International Journal of Computer Applications},
+	issue_date = {June 2020},
+	volume = {176},
+	number = {29},
+	month = {Jun},
+	year = {2020},
+	issn = {0975-8887},
+	pages = {37-41},
+	numpages = {5},
+	url = {http://www.ijcaonline.org/archives/volume176/number29/31386-2020920331},
+	doi = {10.5120/ijca2020920331},
+	publisher = {Foundation of Computer Science (FCS), NY, USA},
+	address = {New York, USA}
+}
+```
