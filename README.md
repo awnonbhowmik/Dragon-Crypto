@@ -7,7 +7,7 @@
 
 # Dragon-Crypto
 
-A new cryptosystem that uses the Dragon Curve Fractal for encrypting and decrypting text messages
+A new cryptosystem that uses the Dragon Curve Fractal for encrypting and decrypting text messages. The research paper can be obtained from here: https://www.ijcaonline.org/archives/volume176/number29/31386-2020920331
 
 In recent years cyber-attacks are continuously developing.
 This means that hackers can find their way around the
@@ -41,3 +41,5 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ## Citation
 If you find this code useful in your research, please consider citing:
+
+Awnon Bhowmik and Unnikrishnan Menon. Dragon Crypto – An Innovative Cryptosystem. International Journal of Computer Applications 176(29):37-41, June 2020.
