@@ -5,7 +5,7 @@
 
 [![Linkedin](https://img.shields.io/badge/Linkedin-Unnikrishnan%20Menon-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/unnikrishnan-menon-aa013415a/) [![Linkedin](https://img.shields.io/badge/Linkedin-Awnon%20Bhowmik-red?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/awnon-bhowmik-13a5a013b/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACIUlr4BQG5MmK7AYfJbU5Zaacunw1qLanM)
 
-# Dragon-Crypto
+# Dragon Crypto
 
 A new cryptosystem that uses the Dragon Curve Fractal for encrypting and decrypting text messages. The research paper can be obtained from here: https://www.ijcaonline.org/archives/volume176/number29/31386-2020920331
 
