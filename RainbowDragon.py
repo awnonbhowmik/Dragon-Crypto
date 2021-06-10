@@ -7,7 +7,7 @@ ob.speed('fastest')
 ob.hideturtle()
 
 ob.goto(0,0)
-ob.tracer(n=10,delay=None)
+wn.tracer(n=10,delay=None)
 
 colors = ["violet","indigo","blue","light green","yellow","orange","red"]
 
@@ -34,6 +34,7 @@ for i in range(len(colors)):
   ob.pencolor(colors[i])
   ob.setheading(360/7*i)
   dragoncurve(ob,2,12)
+  print(ob.pos())
   ob.penup()
   ob.goto(0,0)
   ob.pendown()
